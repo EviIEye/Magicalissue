@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MediatR;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,29 @@ using System.Threading.Tasks;
 
 namespace Magical.Application.Common.Behaviours
 {
-    internal class UnhandledExceptionBehaviour
+    public class UnhandledExceptionBehaviour<TRequest, TResponse>
+        : IPipelineBehavior<TRequest, TResponse>
+        where TRequest : notnull
     {
+        private readonly ILogger<TRequest> _logger;
+        public UnhandledExceptionBehaviour(ILogger<TRequest> logs)
+            => _logger = logs;
+
+        public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
+        {
+            try
+            {
+                return await next();
+            }
+            catch (Exception ex)
+            {
+                var requestName = typeof(TRequest).Name;
+
+                _logger.LogError(ex, "Magicalissue Request: " +
+                    "Unhandled Exception for Request {Name} {@Request}", requestName, request);
+
+                throw;
+            }
+        }
     }
 }

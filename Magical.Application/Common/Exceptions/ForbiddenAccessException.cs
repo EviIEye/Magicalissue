@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Magical.Application.Common.Exceptions
 {
-    internal class ForbiddenAccessException
+    public class ForbiddenAccessException : Exception
     {
+        public ForbiddenAccessException() : base() { }
     }
 }

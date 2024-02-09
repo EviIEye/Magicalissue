@@ -1,9 +1,9 @@
 ﻿
 namespace Magical.Domain.Events
 {
-    public class ProfileCompletedEvent : BaseEvent
+    public class ProfileUpdateEvent : BaseEvent
     {
-        public ProfileCompletedEvent(Profile profile) => Profile = profile;
+        public ProfileUpdateEvent(Profile profile) => Profile = profile;
 
         public Profile Profile { get; }
     }

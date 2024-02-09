@@ -30,6 +30,9 @@ namespace Magical.Application.Common.Behaviours
 
             if (!string.IsNullOrEmpty(userId))
                 userName = await _identityService.GetUserNameAsync(userId);
+
+            _logger.LogInformation("Magicalissue Request: {Name} {@UserId} {@UserName} {@Request}",
+                requestName, userId, userName, request);
         }
     }
 }
