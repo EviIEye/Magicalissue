@@ -1,4 +1,7 @@
-﻿namespace Magical.Domain.Entities
+﻿using Magical.Domain.Common;
+using Magical.Domain.Enums;
+
+namespace Magical.Domain.Entities
 {
     public class Profile : BaseAuditableEntity
     {

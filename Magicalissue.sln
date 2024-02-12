@@ -11,9 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{714AD2CA-E563-4F71-ADA0-B7CD0E99BC73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magical.Domain", "Magical.Domain\Magical.Domain.csproj", "{19674FE7-0326-43AB-9F2E-976D705276D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magical.Domain", "Magical.Domain\Magical.Domain.csproj", "{19674FE7-0326-43AB-9F2E-976D705276D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magical.Application", "Magical.Application\Magical.Application.csproj", "{B751FEDD-C287-48D4-996A-EE0EF7E08D78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magical.Application", "Magical.Application\Magical.Application.csproj", "{B751FEDD-C287-48D4-996A-EE0EF7E08D78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magical.Infrastructure", "Magical.Infrastructure\Magical.Infrastructure.csproj", "{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{B751FEDD-C287-48D4-996A-EE0EF7E08D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B751FEDD-C287-48D4-996A-EE0EF7E08D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B751FEDD-C287-48D4-996A-EE0EF7E08D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{19674FE7-0326-43AB-9F2E-976D705276D1} = {17AE3EC0-766F-4EF5-8135-3494C4FA1B46}
 		{B751FEDD-C287-48D4-996A-EE0EF7E08D78} = {3868630F-8922-4B09-9114-CD22D2402578}
+		{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5} = {36C5997B-FC67-45C3-A82D-07BC56E7881E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E57E062D-7048-4E54-B213-AFA959CC29F3}

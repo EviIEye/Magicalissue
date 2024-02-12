@@ -1,4 +1,6 @@
-﻿namespace  Magical.Domain.Entities
+﻿using Magical.Domain.Common;
+
+namespace  Magical.Domain.Entities
 {
     public class Pool : BaseAuditableEntity
     {

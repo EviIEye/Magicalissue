@@ -13,9 +13,9 @@ namespace Magical.Application.Profiles.Commands.CreateProfile
 
     public class CreateProfileCommandHandler : IRequestHandler<CreateProfileCommand, int>
     {
-        private readonly IApplicationDbContext _context;
+        private readonly IAppDbContext _context;
 
-        public CreateProfileCommandHandler(IApplicationDbContext db) => _context = db;
+        public CreateProfileCommandHandler(IAppDbContext db) => _context = db;
         public async Task<int> Handle(CreateProfileCommand request, CancellationToken cancellationToken)
         {
             var entity = new Profile()

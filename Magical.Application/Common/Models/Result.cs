@@ -19,7 +19,7 @@ namespace Magical.Application.Common.Models
         public static Result Success()
             => new Result(true, Array.Empty<string>());
 
-        public static Result Failuer(IEnumerable<string> errors)
+        public static Result Failure(IEnumerable<string> errors)
             => new Result(false, errors);
     }
 }

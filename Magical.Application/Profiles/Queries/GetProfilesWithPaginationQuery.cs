@@ -21,9 +21,9 @@ namespace Magical.Application.Profiles.Queries
     public class GetProfilesWithPaginationQueryHandler
         : IRequestHandler<GetProfilesWithPaginationQuery, PaginatedList<ProfileBriefDto>>
     {
-        private readonly IApplicationDbContext _context;
+        private readonly IAppDbContext _context;
         private readonly IMapper _mapper;
-        public GetProfilesWithPaginationQueryHandler(IApplicationDbContext db, IMapper maps)
+        public GetProfilesWithPaginationQueryHandler(IAppDbContext db, IMapper maps)
             => (_context, _mapper) = (db, maps);
         public async Task<PaginatedList<ProfileBriefDto>> Handle(GetProfilesWithPaginationQuery request, CancellationToken cancellationToken)
         {

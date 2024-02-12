@@ -15,8 +15,8 @@ namespace Magical.Application.Profiles.Commands.DeleteProfile
 
     public class DeleteProfileCommandHandler : IRequestHandler<DeleteProfileCommand, Unit>
     {
-        private readonly IApplicationDbContext _context;
-        public DeleteProfileCommandHandler(IApplicationDbContext db) => _context = db;
+        private readonly IAppDbContext _context;
+        public DeleteProfileCommandHandler(IAppDbContext db) => _context = db;
         public async Task<Unit> Handle(DeleteProfileCommand request, CancellationToken cancellationToken)
         {
             var entity = await _context.Profiles

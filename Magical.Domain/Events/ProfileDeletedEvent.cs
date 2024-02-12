@@ -1,4 +1,7 @@
-﻿namespace Magical.Domain.Events
+﻿using Magical.Domain.Common;
+using Magical.Domain.Entities;
+
+namespace Magical.Domain.Events
 {
     public class ProfileDeletedEvent : BaseEvent
     {
