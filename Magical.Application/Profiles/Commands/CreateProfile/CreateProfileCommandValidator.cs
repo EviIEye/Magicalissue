@@ -2,7 +2,8 @@
 
 namespace Magical.Application.Profiles.Commands.CreateProfile
 {
-    public class CreateProfileCommandValidator : AbstractValidator<CreateProfileCommand>
+    public class CreateProfileCommandValidator 
+        : AbstractValidator<CreateProfileCommand>
     {
         public CreateProfileCommandValidator()
         {

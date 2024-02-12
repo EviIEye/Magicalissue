@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Magical.Application.Profiles.Queries
 {
-    public class GetProfilesWithPaginationQueryValidator : AbstractValidator<GetProfilesWithPaginationQuery>
+    public class GetProfilesWithPaginationQueryValidator 
+        : AbstractValidator<GetProfilesWithPaginationQuery>
     {
         public GetProfilesWithPaginationQueryValidator()
         {

@@ -20,7 +20,6 @@ namespace Magical.Domain.Persistance.Interceptors
             InterceptionResult<int> result)
         {
             UpdateEntities(eventData.Context);
-
             return base.SavingChanges(eventData, result);
         }
 
@@ -30,7 +29,6 @@ namespace Magical.Domain.Persistance.Interceptors
             CancellationToken cancellationToken = default)
         {
             UpdateEntities(eventData.Context);
-
             return base.SavingChangesAsync(eventData, result, cancellationToken);
         }
 
@@ -55,9 +53,7 @@ namespace Magical.Domain.Persistance.Interceptors
                 }
             }
         }
-
     }
-
     public static class Extensions
     {
         public static bool HasChangedOwnedEntities(this EntityEntry entry)

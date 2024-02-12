@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magical.Domain", "Magical.D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magical.Application", "Magical.Application\Magical.Application.csproj", "{B751FEDD-C287-48D4-996A-EE0EF7E08D78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magical.Infrastructure", "Magical.Infrastructure\Magical.Infrastructure.csproj", "{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magical.Infrastructure", "Magical.Infrastructure\Magical.Infrastructure.csproj", "{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magical.Web", "Magical.Web\Magical.Web.csproj", "{424DD3B8-52F9-4078-9255-CC3959D9AB3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{424DD3B8-52F9-4078-9255-CC3959D9AB3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{424DD3B8-52F9-4078-9255-CC3959D9AB3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{424DD3B8-52F9-4078-9255-CC3959D9AB3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{424DD3B8-52F9-4078-9255-CC3959D9AB3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{19674FE7-0326-43AB-9F2E-976D705276D1} = {17AE3EC0-766F-4EF5-8135-3494C4FA1B46}
 		{B751FEDD-C287-48D4-996A-EE0EF7E08D78} = {3868630F-8922-4B09-9114-CD22D2402578}
 		{0A98CB3D-39D1-48EC-97DB-0C4E84D82BF5} = {36C5997B-FC67-45C3-A82D-07BC56E7881E}
+		{424DD3B8-52F9-4078-9255-CC3959D9AB3A} = {714AD2CA-E563-4F71-ADA0-B7CD0E99BC73}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E57E062D-7048-4E54-B213-AFA959CC29F3}

@@ -11,4 +11,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Magical.Application\Magical.Application.csproj" />
+    <ProjectReference Include="..\Magical.Infrastructure\Magical.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
